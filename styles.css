@@ -1,5 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rampart+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary: #fcd7de;
+  --primary-dark: #caacb2;
+  --bg: #fef7f8;
+  --text: #191516;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Lilita One', cursive;
+}
+
+.header {
+  font-family: 'Rampart One', cursive;
+  background-color: var(--primary);
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  height: 85vh;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.content-left {
+  min-width: 500px;
+}
+
+.content-right {
+  justify-content: center;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.text-output-container {
+  font-size: larger;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 2px var(--primary-dark);
 }
