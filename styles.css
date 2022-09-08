@@ -76,6 +76,7 @@ textarea {
   resize: none;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .text-output-container {
